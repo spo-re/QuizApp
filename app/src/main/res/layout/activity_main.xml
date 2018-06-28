@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/quiz_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/user_name"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Questions 1-4 displays the flags of 4 Countries. \nOut of the given options, choose the countries the flags belong to. "
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 1"
+                    android:layout_marginBottom="8dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/flag_of_guinea"
+                    android:background="@android:color/darker_gray"
+                    android:padding="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Guinea-Bissau"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Guinea"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Grenada"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 2"
+                    android:layout_marginBottom="8dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/flag_of_indonesia"
+                    android:background="@android:color/darker_gray"
+                    android:padding="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Poland"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Indoesia"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Singapore"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 3"
+                    android:layout_marginBottom="8dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/flag_of_kenya"
+                    android:background="@android:color/darker_gray"
+                    android:padding="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Libya"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Eswantini"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Kenya"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 4"
+                    android:layout_marginBottom="8dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/flag_of_singapore"
+                    android:background="@android:color/darker_gray"
+                    android:padding="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Poland"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Indoesia"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Singapore"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/question_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Question 5 \nOut of the stated Countries, select the Country(ies) recognised as a G7 Country."
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal"/>
+
+                <CheckBox
+                    android:id="@+id/option_a_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/question_a"
+                    android:text="Peru"
+                    android:textAllCaps="false"
+                    android:layout_alignParentLeft="true" />
+
+                <CheckBox
+                    android:id="@+id/option_a_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/question_a"
+                    android:text="Australia"
+                    android:textAllCaps="false"
+                    android:layout_centerHorizontal="true" />
+
+                <CheckBox
+                    android:id="@+id/option_a_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/question_a"
+                    android:text="Russia"
+                    android:textAllCaps="false"
+                    android:layout_alignParentRight="true" />
+
+                <CheckBox
+                    android:id="@+id/option_a_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/option_a_1"
+                    android:text="Japan"
+                    android:textAllCaps="false"
+                    android:layout_alignParentLeft="true" />
+
+                <CheckBox
+                    android:id="@+id/option_a_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/option_a_2"
+                    android:text="Nigeria"
+                    android:textAllCaps="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignLeft="@id/option_a_2"/>
+
+                <CheckBox
+                    android:id="@+id/option_a_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/option_a_3"
+                    android:text="Italy"
+                    android:textAllCaps="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@id/option_a_3"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/question_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Question 6 \nRecently the president of the United States of America made a decision to put trading tariffs on certain Countries, out of the given options select the Countries."
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/question_b"
+                    android:gravity="center_vertical">
+
+                    <CheckBox
+                        android:id="@+id/option_b_1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Canada"
+                        android:textAllCaps="false"/>
+
+                    <CheckBox
+                        android:id="@+id/option_b_2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Mexico"
+                        android:textAllCaps="false" />
+
+                    <CheckBox
+                        android:id="@+id/option_b_3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Europe"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/question_i"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 7 \nOn the 12th of June, 2018 the Leadership of both the United States of America and North Korea held a summit for peace talks. Which Country hosted the summit?"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/i_answer"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Answer"
+                    android:layout_below="@id/question_i"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/question_ii"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 8 \nIn which Country was an African Man given a Job and Citizenship for scaling a building to save a child."
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/ii_answer"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Answer"
+                    android:layout_below="@id/question_ii"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/question_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Question 9 \nIn this year's G7 summit, Canada invited a few extra nations to the summit. Among the stated Countries, which of the Countries were invited."
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"/>
+
+                <CheckBox
+                    android:id="@+id/option_c_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/question_c"
+                    android:text="Australia"
+                    android:textAllCaps="false"
+                    android:layout_alignParentLeft="true" />
+
+                <CheckBox
+                    android:id="@+id/option_c_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/question_c"
+                    android:text="Argentina"
+                    android:textAllCaps="false"
+                    android:layout_centerHorizontal="true" />
+
+                <CheckBox
+                    android:id="@+id/option_c_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/question_c"
+                    android:text="Kenya"
+                    android:textAllCaps="false"
+                    android:layout_alignParentRight="true" />
+
+                <CheckBox
+                    android:id="@+id/option_c_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/option_c_1"
+                    android:text="Nigeria"
+                    android:textAllCaps="false"
+                    android:layout_alignParentLeft="true" />
+
+                <CheckBox
+                    android:id="@+id/option_c_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/option_c_2"
+                    android:text="Rwanda"
+                    android:textAllCaps="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignLeft="@id/option_c_2"/>
+
+                <CheckBox
+                    android:id="@+id/option_c_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/option_c_3"
+                    android:text="Iran"
+                    android:textAllCaps="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@id/option_c_3"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/question_iii"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 10 \nSo the \'Gram\' has come up with a new idea that the world \'CNN\' says is taking on YouTube. What is the name of this said idea?"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/iii_answer"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Answer"
+                    android:layout_below="@id/question_iii"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/quiz_questions"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
