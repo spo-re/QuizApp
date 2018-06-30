@@ -219,7 +219,6 @@ public class MainActivity extends AppCompatActivity {
             scoreMessage.show();
         }
 
-//        noOfCorrectAnswers = 0;
         resetVariablesAndQuestions(findViewById(R.id.quiz_questions));
     }
 
