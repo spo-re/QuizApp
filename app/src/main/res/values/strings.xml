@@ -1,3 +1,136 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The name of the app -->
     <string name="app_name">Quiz App</string>
+
+    <!-- The name of the user -->
+    <string name="user_name">Name</string>
+
+    <!-- The hint text used in the EditText -->
+    <string name="answer">Answer</string>
+
+    <!-- The submit button used to submit the questions in the quiz app -->
+    <string name="submit">Submit</string>
+
+    <!-- The question headers used in the quiz -->
+    <string name="questions_1_to_4">
+        Questions 1–4 displays the flags of 4 Countries.  Out of the given options, choose the countries the flags belong to.
+    </string>
+
+    <string name="question_1">Question 1</string>
+
+    <string name="question_2">Question 2</string>
+
+    <string name="question_3">Question 3</string>
+
+    <string name="question_4">Question 4</string>
+
+    <string name="question_5">
+        Question 5  \nOut of the stated Countries, select the Country(ies) recognised as a G7 Country.
+    </string>
+
+    <string name="question_6">
+        Question 6  \nRecently the president of the United States of America made a decision to put trading tariffs on certain Countries, out of the given options select the Countries.
+    </string>
+
+    <string name="question_7">
+        Question 7  \nOn the 12th of June, 2018 the Leadership of both the United States of America and North Korea held a summit for peace talks. Which Country hosted the summit?
+    </string>
+
+    <string name="question_8">
+        Question 8  \nIn which Country was an African Man given a Job and Citizenship for scaling a building to save a child.
+    </string>
+
+    <string name="question_9">
+        Question 9  \nIn this year\'s G7 summit, Canada invited a few extra nations to the summit. Among the stated Countries, which of the Countries were invited.
+    </string>
+
+    <string name="question_10">
+        Question 10  \nSo the \'Gram\' has come up with a new idea that the world \'CNN\' says is taking on YouTube. What is the name of this said idea?
+    </string>
+
+    <!-- The answer to question 10 -->
+    <string name="igtv">IGTV</string>
+
+    <!--
+    Names of Countries
+    -->
+    <string name="guinea_bissau">Guinea-Bissau</string>
+
+    <string name="guinea">Guinea</string>
+
+    <string name="grenada">Grenada</string>
+
+    <string name="poland">Poland</string>
+
+    <string name="indonesia">Indonesia</string>
+
+    <string name="singapore">Singapore</string>
+
+    <string name="libya">Libya</string>
+
+    <string name="kenya">Kenya</string>
+
+    <string name="peru">Peru</string>
+
+    <string name="australia">Australia</string>
+
+    <string name="russia">Russia</string>
+
+    <string name="japan">Japan</string>
+
+    <string name="nigeria">Nigeria</string>
+
+    <string name="italy">Italy</string>
+
+    <string name="canada">Canada</string>
+
+    <string name="mexico">Mexico</string>
+
+    <string name="europe">Europe</string>
+
+    <string name="argentina">Argentina</string>
+
+    <!--
+    Eswatini is the new official name for the country Swaziland
+    -->
+    <string name="eswatini">Eswatini</string>
+
+    <string name="rwanda">Rwanda</string>
+
+    <string name="iran">Iran</string>
+
+    <string name="france">France</string>
+
+    <!--
+    Score message for when the user clicks on the submit button and score is greater then 5.
+    It would be shown as "SHOUT OUT to SPORE, you scored: 10 Points \nPretty AWESOME right?"
+    Where SPORE is the name of the user and 10 is the no of correct answers
+     -->
+    <string name="score_message">SHOUT OUT to
+        <xliff:g example="SPORE" id="name">%s</xliff:g>, you scored: <xliff:g example="10" id="score">%d</xliff:g>
+        Points \nPretty AWESOME right?
+    </string>
+
+    <!--
+    Score message for when the user clicks on the submit button and score is equal to 5.
+    It would be shown as "So SPORE, you scored: 10 Points \nHow does it feel to be average?"
+    Where SPORE is the name of the user and 10 is the no of correct answers
+     -->
+    <string name="score_message2">So
+        <xliff:g example="SPORE" id="name">%s</xliff:g>
+        , you scored: <xliff:g example="5" id="score">%d</xliff:g>
+        Points \nHow does it feel to be average?
+    </string>
+
+    <!--
+    Score message for when the user clicks on the submit button and score is less then 5.
+    It would be shown as "So SPORE, you scored: 10 Points \nNo need to tell you to Try Again."
+    Where SPORE is the name of the user and 10 is the no of correct answers
+     -->
+    <string name="score_message3">So
+        <xliff:g example="SPORE" id="name">%s</xliff:g>
+        , you scored: <xliff:g example="2" id="score">%d</xliff:g>
+        Points \nNo need to tell you to Try Again.
+    </string>
+
 </resources>

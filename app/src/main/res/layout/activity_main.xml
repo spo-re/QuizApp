@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fillViewport="true"
+    tools:context=".MainActivity"
+    tools:ignore="ContentDescription">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,218 +16,238 @@
             android:id="@+id/user_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
-            android:inputType="textCapWords"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:hint="@string/user_name"
+            android:inputType="textCapWords" />
 
         <LinearLayout
             android:id="@+id/quiz_questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_below="@id/user_name"
-            android:paddingTop="16dp"
+            android:orientation="vertical"
             android:paddingLeft="8dp"
-            android:paddingRight="8dp">
+            android:paddingRight="8dp"
+            android:paddingTop="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Questions 1-4 displays the flags of 4 Countries. \nOut of the given options, choose the countries the flags belong to. "
+                android:layout_marginBottom="16dp"
                 android:gravity="center_horizontal"
-                android:layout_marginBottom="16dp"/>
+                android:text="@string/questions_1_to_4" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:gravity="center_horizontal"
+                android:orientation="vertical"
                 android:padding="8dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Question 1"
-                    android:layout_marginBottom="8dp"/>
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/question_1" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/flag_of_guinea"
+                    android:layout_marginBottom="8dp"
                     android:background="@android:color/darker_gray"
                     android:padding="8dp"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/flag_of_guinea" />
 
                 <RadioGroup
+                    android:id="@+id/option_group_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp"
                     android:gravity="center_horizontal"
-                    android:layout_marginBottom="8dp">
+                    android:orientation="horizontal">
 
                     <RadioButton
+                        android:id="@+id/question_1_opt_1"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Guinea-Bissau"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/guinea_bissau"
+                        android:textAllCaps="false" />
 
                     <RadioButton
+                        android:id="@+id/question_1_opt_2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Guinea"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/guinea"
+                        android:textAllCaps="false" />
 
                     <RadioButton
+                        android:id="@+id/question_1_opt_3"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Grenada"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/grenada"
+                        android:textAllCaps="false" />
 
                 </RadioGroup>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Question 2"
-                    android:layout_marginBottom="8dp"/>
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/question_2" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/flag_of_indonesia"
+                    android:layout_marginBottom="8dp"
                     android:background="@android:color/darker_gray"
                     android:padding="8dp"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/flag_of_indonesia" />
 
                 <RadioGroup
+                    android:id="@+id/option_group_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp"
                     android:gravity="center_horizontal"
-                    android:layout_marginBottom="8dp">
+                    android:orientation="horizontal">
 
                     <RadioButton
+                        android:id="@+id/question_2_opt_1"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Poland"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/poland"
+                        android:textAllCaps="false" />
 
                     <RadioButton
+                        android:id="@+id/question_2_opt_2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Indoesia"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/indonesia"
+                        android:textAllCaps="false" />
 
                     <RadioButton
+                        android:id="@+id/question_2_opt_3"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Singapore"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/singapore"
+                        android:textAllCaps="false" />
 
                 </RadioGroup>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Question 3"
-                    android:layout_marginBottom="8dp"/>
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/question_3" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/flag_of_kenya"
+                    android:layout_marginBottom="8dp"
                     android:background="@android:color/darker_gray"
                     android:padding="8dp"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/flag_of_kenya" />
 
                 <RadioGroup
+                    android:id="@+id/option_group_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp"
                     android:gravity="center_horizontal"
-                    android:layout_marginBottom="8dp">
+                    android:orientation="horizontal">
 
                     <RadioButton
+                        android:id="@+id/question_3_opt_1"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Libya"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/libya"
+                        android:textAllCaps="false" />
 
                     <RadioButton
+                        android:id="@+id/question_3_opt_2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Eswantini"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/eswatini"
+                        android:textAllCaps="false" />
 
                     <RadioButton
+                        android:id="@+id/question_3_opt_3"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Kenya"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/kenya"
+                        android:textAllCaps="false" />
 
                 </RadioGroup>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Question 4"
-                    android:layout_marginBottom="8dp"/>
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/question_4" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/flag_of_singapore"
+                    android:layout_marginBottom="8dp"
                     android:background="@android:color/darker_gray"
                     android:padding="8dp"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/flag_of_singapore" />
 
                 <RadioGroup
+                    android:id="@+id/option_group_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_horizontal">
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
 
                     <RadioButton
+                        android:id="@+id/question_4_opt_1"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Poland"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/poland"
+                        android:textAllCaps="false" />
 
                     <RadioButton
+                        android:id="@+id/question_4_opt_2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Indoesia"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/indonesia"
+                        android:textAllCaps="false" />
 
                     <RadioButton
+                        android:id="@+id/question_4_opt_3"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Singapore"
                         android:layout_gravity="center_vertical"
-                        android:textAllCaps="false"/>
+                        android:layout_weight="1"
+                        android:text="@string/singapore"
+                        android:textAllCaps="false" />
 
                 </RadioGroup>
 
@@ -238,70 +259,76 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/question_a"
+                    android:id="@+id/question_5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:text="Question 5 \nOut of the stated Countries, select the Country(ies) recognised as a G7 Country."
                     android:layout_marginBottom="8dp"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:text="@string/question_5" />
 
                 <CheckBox
-                    android:id="@+id/option_a_1"
+                    android:id="@+id/question_5_opt_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/question_a"
-                    android:text="Peru"
-                    android:textAllCaps="false"
-                    android:layout_alignParentLeft="true" />
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/question_5"
+                    android:text="@string/peru"
+                    android:textAllCaps="false" />
 
                 <CheckBox
-                    android:id="@+id/option_a_2"
+                    android:id="@+id/question_5_opt_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/question_a"
-                    android:text="Australia"
-                    android:textAllCaps="false"
-                    android:layout_centerHorizontal="true" />
-
-                <CheckBox
-                    android:id="@+id/option_a_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/question_a"
-                    android:text="Russia"
-                    android:textAllCaps="false"
-                    android:layout_alignParentRight="true" />
-
-                <CheckBox
-                    android:id="@+id/option_a_4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/option_a_1"
-                    android:text="Japan"
-                    android:textAllCaps="false"
-                    android:layout_alignParentLeft="true" />
-
-                <CheckBox
-                    android:id="@+id/option_a_5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/option_a_2"
-                    android:text="Nigeria"
-                    android:textAllCaps="false"
+                    android:layout_below="@id/question_5"
                     android:layout_centerHorizontal="true"
-                    android:layout_alignLeft="@id/option_a_2"/>
+                    android:text="@string/australia"
+                    android:textAllCaps="false" />
 
                 <CheckBox
-                    android:id="@+id/option_a_6"
+                    android:id="@+id/question_5_opt_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/option_a_3"
-                    android:text="Italy"
-                    android:textAllCaps="false"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_alignLeft="@id/option_a_3"/>
+                    android:layout_below="@id/question_5"
+                    android:text="@string/russia"
+                    android:textAllCaps="false" />
+
+                <CheckBox
+                    android:id="@+id/question_5_opt_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/question_5_opt_1"
+                    android:text="@string/japan"
+                    android:textAllCaps="false" />
+
+                <CheckBox
+                    android:id="@+id/question_5_opt_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/question_5_opt_2"
+                    android:layout_alignStart="@id/question_5_opt_2"
+                    android:layout_below="@id/question_5_opt_2"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/nigeria"
+                    android:textAllCaps="false" />
+
+                <CheckBox
+                    android:id="@+id/question_5_opt_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/question_5_opt_3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignStart="@id/question_5_opt_3"
+                    android:layout_below="@id/question_5_opt_3"
+                    android:text="@string/italy"
+                    android:textAllCaps="false" />
 
             </RelativeLayout>
 
@@ -311,44 +338,44 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/question_b"
+                    android:id="@+id/question_6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:text="Question 6 \nRecently the president of the United States of America made a decision to put trading tariffs on certain Countries, out of the given options select the Countries."
+                    android:layout_marginBottom="8dp"
                     android:gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"/>
+                    android:text="@string/question_6" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_below="@id/question_b"
-                    android:gravity="center_vertical">
+                    android:layout_below="@id/question_6"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
                     <CheckBox
-                        android:id="@+id/option_b_1"
+                        android:id="@+id/question_6_opt_1"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Canada"
-                        android:textAllCaps="false"/>
-
-                    <CheckBox
-                        android:id="@+id/option_b_2"
-                        android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:text="Mexico"
+                        android:text="@string/canada"
                         android:textAllCaps="false" />
 
                     <CheckBox
-                        android:id="@+id/option_b_3"
+                        android:id="@+id/question_6_opt_2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Europe"
+                        android:layout_weight="1"
+                        android:text="@string/mexico"
+                        android:textAllCaps="false" />
+
+                    <CheckBox
+                        android:id="@+id/question_6_opt_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/europe"
                         android:textAllCaps="false" />
 
                 </LinearLayout>
@@ -361,21 +388,22 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/question_i"
+                    android:id="@+id/question_7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Question 7 \nOn the 12th of June, 2018 the Leadership of both the United States of America and North Korea held a summit for peace talks. Which Country hosted the summit?"
+                    android:layout_marginBottom="8dp"
                     android:gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"/>
+                    android:text="@string/question_7" />
 
                 <EditText
-                    android:id="@+id/i_answer"
+                    android:id="@+id/question_7_ans"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:hint="Answer"
-                    android:layout_below="@id/question_i"
+                    android:layout_below="@id/question_7"
                     android:layout_centerHorizontal="true"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:hint="@string/answer"
+                    android:inputType="text" />
 
             </RelativeLayout>
 
@@ -385,21 +413,22 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/question_ii"
+                    android:id="@+id/question_8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Question 8 \nIn which Country was an African Man given a Job and Citizenship for scaling a building to save a child."
+                    android:layout_marginBottom="8dp"
                     android:gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"/>
+                    android:text="@string/question_8" />
 
                 <EditText
-                    android:id="@+id/ii_answer"
+                    android:id="@+id/question_8_ans"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:hint="Answer"
-                    android:layout_below="@id/question_ii"
+                    android:layout_below="@id/question_8"
                     android:layout_centerHorizontal="true"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:hint="@string/answer"
+                    android:inputType="text" />
 
             </RelativeLayout>
 
@@ -409,70 +438,76 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/question_c"
+                    android:id="@+id/question_9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:text="Question 9 \nIn this year's G7 summit, Canada invited a few extra nations to the summit. Among the stated Countries, which of the Countries were invited."
+                    android:layout_marginBottom="8dp"
                     android:gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"/>
+                    android:text="@string/question_9" />
 
                 <CheckBox
-                    android:id="@+id/option_c_1"
+                    android:id="@+id/question_9_opt_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/question_c"
-                    android:text="Australia"
-                    android:textAllCaps="false"
-                    android:layout_alignParentLeft="true" />
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/question_9"
+                    android:text="@string/australia"
+                    android:textAllCaps="false" />
 
                 <CheckBox
-                    android:id="@+id/option_c_2"
+                    android:id="@+id/question_9_opt_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/question_c"
-                    android:text="Argentina"
-                    android:textAllCaps="false"
-                    android:layout_centerHorizontal="true" />
-
-                <CheckBox
-                    android:id="@+id/option_c_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/question_c"
-                    android:text="Kenya"
-                    android:textAllCaps="false"
-                    android:layout_alignParentRight="true" />
-
-                <CheckBox
-                    android:id="@+id/option_c_4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/option_c_1"
-                    android:text="Nigeria"
-                    android:textAllCaps="false"
-                    android:layout_alignParentLeft="true" />
-
-                <CheckBox
-                    android:id="@+id/option_c_5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/option_c_2"
-                    android:text="Rwanda"
-                    android:textAllCaps="false"
+                    android:layout_below="@id/question_9"
                     android:layout_centerHorizontal="true"
-                    android:layout_alignLeft="@id/option_c_2"/>
+                    android:text="@string/argentina"
+                    android:textAllCaps="false" />
 
                 <CheckBox
-                    android:id="@+id/option_c_6"
+                    android:id="@+id/question_9_opt_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/option_c_3"
-                    android:text="Iran"
-                    android:textAllCaps="false"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_alignLeft="@id/option_c_3"/>
+                    android:layout_below="@id/question_9"
+                    android:text="@string/kenya"
+                    android:textAllCaps="false" />
+
+                <CheckBox
+                    android:id="@+id/question_9_opt_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/question_9_opt_1"
+                    android:text="@string/nigeria"
+                    android:textAllCaps="false" />
+
+                <CheckBox
+                    android:id="@+id/question_9_opt_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/question_9_opt_2"
+                    android:layout_alignStart="@id/question_9_opt_2"
+                    android:layout_below="@id/question_9_opt_2"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/rwanda"
+                    android:textAllCaps="false" />
+
+                <CheckBox
+                    android:id="@+id/question_9_opt_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/question_9_opt_3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignStart="@id/question_9_opt_3"
+                    android:layout_below="@id/question_9_opt_3"
+                    android:text="@string/iran"
+                    android:textAllCaps="false" />
 
             </RelativeLayout>
 
@@ -482,21 +517,22 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/question_iii"
+                    android:id="@+id/question_10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Question 10 \nSo the \'Gram\' has come up with a new idea that the world \'CNN\' says is taking on YouTube. What is the name of this said idea?"
+                    android:layout_marginBottom="8dp"
                     android:gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"/>
+                    android:text="@string/question_10" />
 
                 <EditText
-                    android:id="@+id/iii_answer"
+                    android:id="@+id/question_10_ans"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:hint="Answer"
-                    android:layout_below="@id/question_iii"
+                    android:layout_below="@id/question_10"
                     android:layout_centerHorizontal="true"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:hint="@string/answer"
+                    android:inputType="text" />
 
             </RelativeLayout>
 
@@ -505,11 +541,12 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
             android:layout_alignParentBottom="true"
             android:layout_below="@id/quiz_questions"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            android:onClick="submitQuestions"
+            android:text="@string/submit" />
 
     </RelativeLayout>
 
