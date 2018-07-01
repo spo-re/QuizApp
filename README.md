@@ -2,7 +2,7 @@
 
 Final Project for the Google Africa Scholarship in partnership with Udacity and Andela.
 
-It is a Quiz App with the questions based on world news and general knowledge. With the design based mainly on the guidelines given in the Udacity Project Rubric which can be found here https://review.udacity.com/#!/rubrics/158/view.
+The questions in the Quiz App are based on world news and general knowledge. And the design was done mainly following the guidelines given in the Udacity Project Rubric which can be found here https://review.udacity.com/#!/rubrics/158/view.
 
 #7DaysofCodeChallenge
 
