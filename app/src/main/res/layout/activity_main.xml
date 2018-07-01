@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -34,25 +35,29 @@
             android:paddingRight="8dp"
             android:paddingTop="16dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:gravity="center_horizontal"
-                android:text="@string/questions_1_to_4" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fadeScrollbars="false"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:padding="8dp">
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/question_box"
+                    android:gravity="center_horizontal"
+                    android:text="@string/questions_1_to_4"
+                    app:fontFamily="sans-serif-light" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/question_1" />
+                    android:text="@string/question_1"
+                    app:fontFamily="sans-serif-light" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -66,7 +71,7 @@
                     android:id="@+id/option_group_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="24dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -74,10 +79,11 @@
                         android:id="@+id/question_1_opt_1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
+                        android:layout_gravity="center_vertical|center_horizontal"
                         android:layout_weight="1"
                         android:text="@string/guinea_bissau"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                     <RadioButton
                         android:id="@+id/question_1_opt_2"
@@ -86,7 +92,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/guinea"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                     <RadioButton
                         android:id="@+id/question_1_opt_3"
@@ -95,7 +102,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/grenada"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                 </RadioGroup>
 
@@ -103,7 +111,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/question_2" />
+                    android:text="@string/question_2"
+                    app:fontFamily="sans-serif-light" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -117,7 +126,7 @@
                     android:id="@+id/option_group_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="24dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -128,7 +137,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/poland"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                     <RadioButton
                         android:id="@+id/question_2_opt_2"
@@ -137,7 +147,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/indonesia"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                     <RadioButton
                         android:id="@+id/question_2_opt_3"
@@ -146,7 +157,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/singapore"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                 </RadioGroup>
 
@@ -154,7 +166,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/question_3" />
+                    android:text="@string/question_3"
+                    app:fontFamily="sans-serif-light" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -168,7 +181,7 @@
                     android:id="@+id/option_group_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="24dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -179,7 +192,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/libya"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                     <RadioButton
                         android:id="@+id/question_3_opt_2"
@@ -188,7 +202,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/eswatini"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                     <RadioButton
                         android:id="@+id/question_3_opt_3"
@@ -197,7 +212,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/kenya"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                 </RadioGroup>
 
@@ -205,7 +221,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/question_4" />
+                    android:text="@string/question_4"
+                    app:fontFamily="sans-serif-light" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -219,6 +236,7 @@
                     android:id="@+id/option_group_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -229,7 +247,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/poland"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                     <RadioButton
                         android:id="@+id/question_4_opt_2"
@@ -238,7 +257,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/indonesia"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                     <RadioButton
                         android:id="@+id/question_4_opt_3"
@@ -247,7 +267,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="@string/singapore"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        app:fontFamily="sans-serif-light" />
 
                 </RadioGroup>
 
@@ -265,8 +286,11 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/question_box"
                     android:gravity="center_horizontal"
-                    android:text="@string/question_5" />
+                    android:text="@string/question_5"
+                    app:fontFamily="sans-serif-light" />
 
                 <CheckBox
                     android:id="@+id/question_5_opt_1"
@@ -344,8 +368,11 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/question_box"
                     android:gravity="center_horizontal"
-                    android:text="@string/question_6" />
+                    android:text="@string/question_6"
+                    app:fontFamily="sans-serif-light" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -382,9 +409,10 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:padding="8dp">
 
                 <TextView
@@ -392,45 +420,44 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/question_box"
                     android:gravity="center_horizontal"
-                    android:text="@string/question_7" />
+                    android:text="@string/question_7"
+                    app:fontFamily="sans-serif-light" />
 
                 <EditText
                     android:id="@+id/question_7_ans"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/question_7"
-                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center_horizontal"
                     android:hint="@string/answer"
-                    android:inputType="text" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp">
+                    android:inputType="text"
+                    app:fontFamily="sans-serif-light" />
 
                 <TextView
                     android:id="@+id/question_8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/question_box"
                     android:gravity="center_horizontal"
-                    android:text="@string/question_8" />
+                    android:text="@string/question_8"
+                    app:fontFamily="sans-serif-light" />
 
                 <EditText
                     android:id="@+id/question_8_ans"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/question_8"
-                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center_horizontal"
                     android:hint="@string/answer"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    app:fontFamily="sans-serif-light" />
 
-            </RelativeLayout>
+            </LinearLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -444,8 +471,11 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/question_box"
                     android:gravity="center_horizontal"
-                    android:text="@string/question_9" />
+                    android:text="@string/question_9"
+                    app:fontFamily="sans-serif-light" />
 
                 <CheckBox
                     android:id="@+id/question_9_opt_1"
@@ -511,9 +541,10 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:padding="8dp">
 
                 <TextView
@@ -521,20 +552,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/question_box"
                     android:gravity="center_horizontal"
-                    android:text="@string/question_10" />
+                    android:text="@string/question_10"
+                    app:fontFamily="sans-serif-light" />
 
                 <EditText
                     android:id="@+id/question_10_ans"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/question_10"
-                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
                     android:gravity="center_horizontal"
                     android:hint="@string/answer"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    app:fontFamily="sans-serif-light" />
 
-            </RelativeLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -544,7 +579,8 @@
             android:layout_alignParentBottom="true"
             android:layout_below="@id/quiz_questions"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="24dp"
             android:onClick="submitQuestions"
             android:text="@string/submit" />
 
