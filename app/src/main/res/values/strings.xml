@@ -107,7 +107,8 @@
     Where SPORE is the name of the user and 10 is the no of correct answers
      -->
     <string name="score_message">SHOUT OUT to
-        <xliff:g example="SPORE" id="name">%s</xliff:g>, you scored: <xliff:g example="10" id="score">%d</xliff:g>
+        <xliff:g example="SPORE" id="name">%s</xliff:g>,
+        you scored: <xliff:g example="10" id="score">%d</xliff:g>
         Points \nPretty AWESOME right?
     </string>
 
@@ -117,8 +118,8 @@
     Where SPORE is the name of the user and 10 is the no of correct answers
      -->
     <string name="score_message2">So
-        <xliff:g example="SPORE" id="name">%s</xliff:g>
-        , you scored: <xliff:g example="5" id="score">%d</xliff:g>
+        <xliff:g example="SPORE" id="name">%s</xliff:g>,
+        you scored: <xliff:g example="5" id="score">%d</xliff:g>
         Points \nHow does it feel to be average?
     </string>
 
@@ -128,8 +129,8 @@
     Where SPORE is the name of the user and 10 is the no of correct answers
      -->
     <string name="score_message3">So
-        <xliff:g example="SPORE" id="name">%s</xliff:g>
-        , you scored: <xliff:g example="2" id="score">%d</xliff:g>
+        <xliff:g example="SPORE" id="name">%s</xliff:g>,
+        you scored: <xliff:g example="2" id="score">%d</xliff:g>
         Points \nNo need to tell you to Try Again.
     </string>
 

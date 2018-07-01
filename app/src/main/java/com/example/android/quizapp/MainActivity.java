@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         return noOfCorrectAnswers;
     }
 
-    private void resetVariablesAndQuestions(View view) {
+    private void resetVariablesAndQuestions() {
 
         // Gets the id for all RadioGroups and clears all selection whether right or wrong
         RadioGroup radioGroup1 = findViewById(R.id.option_group_1);
@@ -219,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
             scoreMessage.show();
         }
 
-        resetVariablesAndQuestions(findViewById(R.id.quiz_questions));
+        resetVariablesAndQuestions();
     }
 
 }
